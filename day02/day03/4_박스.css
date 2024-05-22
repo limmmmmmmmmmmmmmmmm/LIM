@@ -1,0 +1,90 @@
+
+*{border: 2px solid pink;}
+html{border: 2px solid red;}
+body{border: 2pc solid blue;}
+
+
+.구역1{
+    border: 1px solid black;
+    border-bottom: 1px dashed greenyellow;
+
+}
+
+.구역2{
+    border-top: 1px solid orange; /*solid 실선*/
+    border-right: 1px dotted aqua; /*점선 */
+    border-left: 1px double green; /*중복선*/
+    border-bottom: 1px dashed red; /*점선*/
+    border-radius: 10px; /*둥근테구리*/
+    box-shadow: 5px 5px 5px black;
+    text-align: center; /*위치정렬*/
+    width: 300px; /*가로*/
+    height: 300px;  /*세로*/
+    
+}
+
+.구역3{
+    padding: 20px; /*(테두리 컨텐츠 사이)안쪽 여백*/
+    margin: 30px; /*(테두리와 다른구역 사이에)바깥 여백*/
+
+
+}
+
+.구역4{
+    width: 100px; /*구역 가로 사이즈*/
+
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+
+    margin-top: 60px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+
+
+}
+.구역5{
+    padding: 10px 20px 30px 40px; /*위에서부터 시계방향*/
+    padding: 20px 30px;  /*위아래,왼쪽오른쪽*/
+    margin: 10px 20px 30px 40px;
+    margin: 20px 30px ;
+}
+
+.구역6{
+    /*구역의 크기계산*/
+    width: 200px; height: 200px;
+    box-sizing: content-box; /*기본값*/
+    box-sizing: border-box;
+    padding: 10px;
+
+    /*구역 가운데 정렬 (text-align은 구역안 콘텐츠 정렬)  */
+    margin: 0  auto;
+    text-align: center;
+
+    /*구역 배경색*/
+    background-color: aqua;
+    background-image: url("../2222.jpg");
+
+}
+
+.s1{
+    display: inline; /*span의 기본값*/
+    width: 200px; height: 200px;
+}
+
+.s2{
+    display: block;
+    width: 200px; height: 200px;
+
+
+
+}
+.s3{
+    display: inline-block ;
+
+}
+.s4{
+    display: none;
+}

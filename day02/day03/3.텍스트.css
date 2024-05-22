@@ -1,0 +1,43 @@
+/*
+
+css 주석
+어디에 {무엇을 어떻게}
+
+
+
+
+*/
+@font-face {
+    font-family: 'KCC-Hanbit';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/KCC-Hanbit.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.title{
+    font-family: 'KCC-Hanbit';
+    font-size: large;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.content{
+    font-family: 'KCC-Hanbit';
+    color: gold;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    line-height: 160%;
+
+}
+
+#writer{
+    text-align: center;   /*텍스트 가로정렬*/
+    text-decoration: underline overline line-through;  /*텍스트 선긋기*/
+    text-shadow: 10px 10px 10px red ;  /*텍스트 그림자 */
+    color: #f0f;
+
+
+}  
+    

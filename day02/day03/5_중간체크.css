@@ -1,0 +1,48 @@
+.book1{
+    width: 500px; height: 700px;
+}
+
+.go1{
+    padding: 10px;
+    font-size:xx-large;
+    width: 700px;
+    color: orange;
+    font-weight: bold;
+}
+
+.s2{
+    color: black;
+
+}
+
+.go2{
+    background-color: aquamarine;
+    padding: 30px;
+    width: 700px;
+    line-height: 30px;
+
+}
+
+
+.go3{
+    padding: 10px;
+    font-size:xx-large;
+    width: 700px;
+    color: orange
+
+}
+.go4{
+    background-color: aquamarine;
+    padding: 30px;
+    width: 700px;
+    line-height: 30px;
+}
+.s3{
+    color: black;
+
+}
+
+.point{
+    color: orange;
+    font-weight: bold;
+}

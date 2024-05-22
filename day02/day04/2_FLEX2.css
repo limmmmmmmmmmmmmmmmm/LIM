@@ -1,0 +1,67 @@
+
+*{
+    box-sizing: border-box;
+}
+.box{
+    background-color: black; 
+    color: white;
+    width:10% ; /*부모 사이즈에서 10%만 사용*/
+
+}
+
+.con{
+    display: flex; 
+    border: 3px solid red; /*width생략시 100%*/
+
+}
+
+#flexbox{
+    justify-content: flex-start;  /*기본값 왼쪽부터 정령*/
+}
+
+#flexbox2{
+    justify-content: flex-end;  /*오른쪽부터 정렬*/
+}
+
+
+#flexbox3{
+    justify-content: center;  /*가운데 정렬 (margin 0 auto)처럼 됨*/
+}
+
+#flexbox4{justify-content: space-between;  /*양쪽끝에 여백없이 균등 공백배치*/}
+#flexbox5{justify-content: space-around; /*사이여백의 50*/}
+#flexbox6{justify-content: space-evenly; /*사이여백 양쪽여백*/}
+
+
+.flexbox1, .flexbox2, .flexbox3,.flexbox4,.flexbox5{
+    display: flex; width: 200px; border: 5px solid blue;
+    align-items: stretch; /*기본값 모든 자식요소는 컨테이너에 높이만큼 자동으로 늘어남*/
+
+}
+
+.box1,.box2,.box3,.box4,.box5,.box6{
+    background-color: red; color: white;
+    border: 2px solid white; 
+    
+}
+
+.box1 { width: 50px; height: 50px;}
+.box2 { width: 100px; height: 100px;}
+.box4{ width: 50px;height: 100px;}
+.box5{ width: 100px;height: 150px;  
+        display: inline-flex; align-items: center;}
+
+.flexbox2{
+    align-items: flex-start; /*부모 윗변에 붙음, 높이는 자동으로 늘어나진 않음*/
+}
+
+.flexbox3{
+    align-items: flex-end; /*부모 밑변에 불음*/
+}
+.flexbox4{
+     align-items: center; /*부모 가운데 정렬*/
+}
+.flexbox5{
+    align-items: baseline; /*자식내용 컨텐츠 아래기준으로 잡음*/
+    flex-wrap: wrap;
+}

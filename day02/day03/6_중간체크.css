@@ -1,0 +1,33 @@
+li{list-style-type: none;}
+*{padding: 0px;margin: 0px;}
+
+.product{
+    border: 1px solid #eeeeee;
+    width: 400px;
+}   
+
+.img{ 
+    width: 400px; height: 300px;
+    
+
+}
+
+.제목{
+    font-size: 30px;
+    font-weight: bold;
+    border-top:  1px solid  #eeeeee;
+    padding: 30px 10px;
+}
+
+.가격{
+    padding: 10px;
+    font-weight: bold;
+}
+
+.내용{
+    padding: 10px; line-height: 160%;
+}
+.오{
+    padding: 10px;
+    color: orange; font-weight: 500;
+}
