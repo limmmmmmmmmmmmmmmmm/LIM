@@ -1,0 +1,171 @@
+
+
+/* 기본 css 세팅 : 글꼴 , 안쪽여백 , 바깥여백 , 구역사이즈기준  */ 
+*{ font-family: "굴림";  padding: 0px; margin: 0px; box-sizing: border-box; }
+li{ list-style-type: none; }  /* 글머리 제거 */
+a{ text-decoration: none; color: black;} /* a마크업의 밑줄제거,색상 검정*/
+
+/* 레이아웃 용 */
+#header{ width: 1280px; margin: 0 auto; } 
+#content{ width: 1280px; margin: 0 auto; } 
+
+
+#header{
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;            
+}
+
+
+#headerLeft{display: flex;
+    align-items: center;
+}
+
+
+#topMenu{
+  display: flex;
+  justify-content: flex-end; margin: 15px 0px;
+}
+#mainMenu{
+  display: flex;
+  justify-content: flex-end;  
+}
+#mainMenu > li { 
+  font-size: 20px; font-weight: bold;
+  margin-left: 100px; margin-top: 15px; 
+}
+
+
+#mainImg{
+  width: 100%; height: 300px; margin: 30px 0px; /* 구역 사이즈 */
+  background-image: url("img/main_bg.png"); /* 구역 배경 이미지 */
+
+  /* 배경 자동 채우기 : 배경 이미지 보다 구역의 크기가 컸을때 이미지를 반복채우기  */
+  background-repeat: no-repeat; /* no-repeat : 자동채우기 안함 , repeat : (기본값)자동채우기 */
+
+  background-position: center ;
+}
+
+
+#content{  
+  display: flex; justify-content: space-between;
+}
+#sidebar{
+  width: 250px;
+}
+#sidebar > h3{
+  background-color: #0ca9a2; 
+  color: white; font-size: 20px; padding: 15px;
+}
+#sidebar > p{ padding: 15px; line-height: 160%; } 
+
+#sidebar > .searchInput{
+  width: 150px; height: 30px;
+  margin-left: 15px; padding: 10px;
+  border-radius: 10px; 
+}
+#sidebar > .searchBtn{  margin-left: 10px; 
+    padding: 6px 10px; }
+
+#sidebar > h4{ 
+  border-top: solid 2px black; 
+  border-bottom: solid 1px #eeeeee;
+  padding: 15px; margin-top: 10px; 
+  font-size: 20px;
+}
+
+#sidebar > ul > li { 
+  padding: 10px 15px;
+}
+
+
+#mainContent{
+  width: 1010px; 
+  display: flex;  justify-content: space-between;
+}
+#mainContent > #leftcontent{
+    width: 500px;
+}
+#mainContent h3{
+    border-bottom: solid 2px black;
+    padding-bottom: 10px;}
+
+#mainContent > #rightcontent{width: 500px; }
+#leftcontent > .bored{margin: 10px 0px 50px 0px;}
+
+#leftcontent > .bored >li{display: flex; justify-content: space-between;
+padding: 10px 0px;}
+
+
+
+#productlist{display: flex;
+flex-wrap: wrap;}
+
+#productlist > .product {
+    width: 200px; margin: 25    px;
+}
+
+
+#footer{
+    background-color: #05344e; color: white;
+}
+
+#footercontent{ width: 1280px; margin: 0 auto;
+padding: 30px 0;}
+
+#ftTop{
+    display: flex; 
+}
+#ftTop>li{margin-right: 50px;}
+
+#ftBottom{
+    display: flex; margin: 30px 0px;
+    justify-content: space-between;
+}
+
+#ftBottom > h3{
+    margin-bottom: 30px;
+}
+
+
+#ftBottom>ul >li{margin: 5px 0px;}
+
+<div id="content2">
+<div id="ct2top">
+    <h1>센스로 완전 무장</h1>
+</div>
+<ul id="ct2mid">
+    <li>빈티지한 나이키 V2K 런으로 시선을 사로잡는 스타일을 연출하고,</li>
+    <li>다양한 제품들과 함께 일상 속 특별한 스타일링을 완성해 보세요.</li>
+</ul>
+<div id="ct2bot">
+    <input type="button" value="구매하기">
+    <input type="button" value="자세히 보기">
+</div>
+</div>
+
+</div>
+            <div id="content4">
+                
+            </div>
+            <div id="content5">
+                
+            </div>
+            <div id="content6">
+                
+            </div>
+            <div id="content7">
+                
+            </div>
+            <div id="content8">
+                
+            </div>
+            <div id="content9">
+                
+            </div>
+            <div id="content10">
+                
+            </div>
+            <div id="content11">
+                
+            </div>

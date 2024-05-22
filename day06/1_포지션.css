@@ -1,0 +1,63 @@
+
+
+.box{
+    width: 100px; height: 100px;
+    background-color: yellow; border: 1px solid red;
+}
+
+.box2{
+    background-color: red;
+    /*포지션*/
+    position: relative;
+    /*위치: 위치ㅣ기준 {왼쪽 상단 꼭짓점}  원래구역 기준으로 이동*/
+    top: 50px; 
+}
+
+.box5{
+    background-color:  red; position: absolute; /*
+    absolute 절대위치 : 부모 구역의 위치부터 시작*/
+    top: 50px; left: 50px;
+}
+
+
+.box8{
+    background-color: rebeccapurple;
+    position: static; /*position static : 정적위치(기본값)*/
+    top: 50px; left: 50px;
+    /*position static : 어떤 위치 속성 (right, left, top, down) 사용불가*/
+}
+
+.box11{ /*밑에 있는 top버튼 주로 사용*/
+    background-color: rebeccapurple;
+    position: fixed; /* position: fixed: 디바이스 화면 고정위치*/
+    right: 50px; bottom: 50px; }
+
+
+.perent{
+    background-color: aqua; position: relative;
+    padding: 20px;
+}
+
+.box14{
+    background-color: black; position: absolute; /*가장 가까운 부모의
+    포지션 relative 기준점 */
+    top: 100px; right: 50px; 
+}
+
+/*포지션
+    positiin static : 기본값 ㅣ 작성순서대로 배치 ( 속성위치 사용할수 없다.)
+    relative : 상대위치 : 자신의 본래 위치로 부터 기준
+    absolute : 절대위치 : 부모의 위치 기준 (가장 가까운 relative 
+    fixed : 고정위치  : 디바이스 화면의 고정
+*/
+
+/*속성위치
+    top : 윗변 기준이 
+    bottom : 
+    left :
+    right : 
+*/
+
+/*배치 우선순위번호
+    z-index
+*/

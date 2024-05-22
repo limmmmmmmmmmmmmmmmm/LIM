@@ -1,0 +1,64 @@
+/*=========== 공통 CSS 작업 ===============*/
+*{padding: 0PX; margin: 0px; box-sizing: border-box;
+    background-color:#eeecec;margin: 0 auto; }
+   li{list-style-type: none;}
+   a{color: black; text-decoration: none;}
+   /*============ 레 이 아 웃 ===============*/
+   /* *{border: 1px solid red;} */
+   
+   #header{height: 300px; background-color: aqua; width: 1280px;}
+   #content{height: 1500px; width: 1280px;}
+   
+   *{border: 2px solid rebeccapurple;}
+   
+   /*======================윗 컨텐츠============================*/
+   
+   #content div{padding: 10px;}
+   
+   #Mevent{display: flex; 
+   width: 100%; height: 140px; margin: 0 auto; 
+   background-color: white; align-items: center;
+    }
+   
+   #Mevent > div{font-size: 30px; 
+       background-color: white; 
+       margin-left: 0px;padding-left: 5px;}
+   
+   /*==================제품컨텐츠===============*/
+   
+   #lists{ display: flex; justify-content: space-between;
+       flex-wrap: wrap;
+   }
+   
+   
+   .mainEvent{width: 400px;margin: 10px 3px; height: 465px; position: relative;}
+   .EventImg{width: 100%; height: 280px;margin-bottom: -6px; }
+   
+
+    #data > div{font-size: 15px; color: black; font-weight: bold;}
+   .Eventname > li{background-color: white;  }
+   .Eventdata{background-color: white; }
+   .Eventdata:hover{border-bottom: 2px solid #f2c000; }
+   
+   
+   
+   
+   .Eventname > li >  span{background-color: white; margin-left: 25px;
+    font-size: 25px;  }
+   
+   .Eventname > li > div {padding: 5px; background-color: white;
+   font-size: 13px; color: gray; margin-left: 20px; }
+   
+   
+   
+   
+   #contentEND{display: flex;justify-content: center;}
+   
+   #contentEND > div{border: 2px solid black; font-size:13px; 
+   width: 180px;height: 70px; margin-bottom: 30px;}
+   
+   #contentEND > div > a{display: flex;justify-content: center;
+   align-items: center; margin-top: 13px; font-size: 14px;
+   font-weight: bold;   }
+   
+   

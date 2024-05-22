@@ -1,0 +1,76 @@
+/*협업시 : 공통 
+1.컨텐츠 사이즈 : pc기준 1000-1300 네이버:1280
+2.폰트
+3.색상테마
+4.레이아웃
+
+css
+선택자{속성명 : 값}
+
+*/ 글꼴, 안쪽여백, 바깥여백, 박스사이즈
+*{ box-sizing: border-box; }
+*{ list-style-type: none; ;
+    text-decoration: none; color: black; 
+    /*a마크업 색상제거 밑줄제거*/
+    /*a태그가 클릭하면 이동하는애{링크}*/
+}
+
+/*사이즈*/
+#wrap{width: 1280px; margin: 0 auto;}
+#header{width: 1280px;}
+#content{ width: 1280px; display: flex; }
+#footer{width: 1280px;}
+/**/
+
+
+#img{height: 50px;}
+
+#header{display: flex;justify-content: space-between;
+margin: 10px 0px; align-items: center; }
+#rightheader{justify-content: flex-end; 
+}
+#rTopheader{display: flex; font-size: 10px; justify-content: flex-end;}
+#rDownheader{display: flex;font-size: 15px; font-weight: bold;
+;justify-content: flex-end; }
+#rTopheader>li{margin-left: 10px;}
+#rDownheader>li{margin-left: 30px;}
+
+
+
+
+#mainimg{
+   width: 100%; height: 300px;
+   background-image: url(img/main_bg.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   margin: ;
+}
+
+
+#content{justify-content: space-between;}
+#sidebar{width: 300px;
+
+}/*부모요소가 1280이니까 자식요소들이 나눠서 설정*/
+
+#sidebar > h3{background-color: aqua;
+color: white; font-size: 20px; padding: 15px;}
+
+#sidebar > p {padding: 15px; line-height: 16px;}
+
+#sidebar > .serchinput{ width: 150px; height: 30px;
+    margin-left: 15px; padding: 10px;
+border-radius: 10px;}
+
+#sidebar > .serchinputbtn{
+    margin-left: 10px; padding: 5px 10px ;
+}
+
+#sidebar > h4{
+    border-top: solid 2px black; border-bottom: solid 1px #eeeeee;
+    padding: 15px; margin-top: 10px; font-size: 20px;
+}
+
+
+
+
+#maincontent{width: 900px;}
