@@ -8,7 +8,7 @@ const nameList = [ ]
 
 function 등록( ){    console.log( '등록()' ); 
   
-let input = document.querySelector('#name')
+  let input = document.querySelector('#name')
 
   let name = input.value; //인풋만 가져오는데 value를 입력함으로써 인풋에 있는 value까지 적용              
   
@@ -41,7 +41,7 @@ function 삭제(){
   else{alert(`없는 회원입니다.`);}
   // 3. [출력]
   출력( );
-  document.querySelector('#name').value = '';
+  document.querySelector('#name').value = ''; // input.value 못할경우 이렇게 사용가능
 
 }
 

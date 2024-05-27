@@ -62,7 +62,7 @@
 //객체
 console.log({}); // {} Object  []:Array  () : function
 let 객체변수 = {이름 : `유재석`, 직업 : `연예인`, age : 40, 'address-city' : '부평구'}; //변수에 객체/자료 담기 / `이거안됨 ' 이거사용
-console.log(객체변수);
+console.log(객체변수); 
 console.log(객체변수.age);console.log(객체변수.이름);console.log(객체변수.직업);
 //console.log(객체변수.`address-city`); 속성명에 특수문자 포함될 경우 오류 발생
 console.log(객체변수[`address-city`]); //속성명에 특수문자 있을경우,
@@ -70,7 +70,7 @@ console.log(객체변수[`address-city`]); //속성명에 특수문자 있을경
 
 
 //3. 속성내 데이터 수정
-객체변수.age = 50;
+객체변수.age = 50;   //let으로 객체변수를 만들어주지 않으면 이렇게는 생성이 불가능하다
 객체변수.money = 300; //만일 없는 속성명에 데이터 대입할경우 새로운 속석명과 데이터 추가
 console.log(객체변수);
 

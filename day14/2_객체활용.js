@@ -4,7 +4,6 @@ let 영화API = {"boxOfficeResult":{"boxofficeType":"주말 박스오피스","sh
 
 //console.log(영화API.boxOfficeResult);
 
-
 //console.log(영화API.boxOfficeResult.weeklyBoxOfficeList[1].rank);
 //console.log(영화API.boxOfficeResult.weeklyBoxOfficeList[1].movieNm);
 
@@ -13,7 +12,7 @@ let 영화API = {"boxOfficeResult":{"boxofficeType":"주말 박스오피스","sh
 moviePrint() //함수 실행 안해줘서 안나왔음;;;;   js가 실행될때 함수 1번 실행해주기 그전에는 onclick으로 해줘서 안해줬었는데 바로 출력 할수 있게 
 function moviePrint() {
     //어디에
-let 어디에 = document.querySelector(`#tablebody`)
+    let 어디에 = document.querySelector(`#tablebody`)
 
     //무엇을
     let 무엇을 = '';
@@ -26,8 +25,8 @@ let 어디에 = document.querySelector(`#tablebody`)
         무엇을 += 
                     `<tr>
                         <td>${영화.rank}</td>
-                        <td>${영화목록[i].movieNm}</td>
-                        <td>${영화목록[i].openDt}</td>
+                        <td>${영화.movieNm}</td>
+                        <td>${영화.openDt}</td>
                         <td>${영화.audiAcc}</td>
                         <td>${영화.salesAcc}</td>
                     </tr>`
@@ -36,6 +35,9 @@ let 어디에 = document.querySelector(`#tablebody`)
     //대입/출력
     어디에.innerHTML=무엇을;
 }
+
+
+
 
 
 
