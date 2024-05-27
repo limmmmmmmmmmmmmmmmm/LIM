@@ -7,10 +7,16 @@ console.log( 'js실행' );
 const nameList = [ ]
 
 function 등록( ){    console.log( '등록()' ); 
-  let input = document.querySelector('#name');  
-    
-  let name = input.value;                 
-   
+  
+let input = document.querySelector('#name')
+
+  let name = input.value; //인풋만 가져오는데 value를 입력함으로써 인풋에 있는 value까지 적용              
+  
+  input.value = '';
+
+
+
+
 //=============유효성 검사==================
     if(nameList.indexOf( name)!= -1 ){alert(`이미 등록된 이름입니다.`);}
     else if(name.length !=3){alert(`회원명은 3글자만 입력 가능합니다.`);}
@@ -35,6 +41,7 @@ function 삭제(){
   else{alert(`없는 회원입니다.`);}
   // 3. [출력]
   출력( );
+  document.querySelector('#name').value = '';
 
 }
 
