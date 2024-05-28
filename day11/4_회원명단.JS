@@ -36,7 +36,8 @@ function 삭제(){
   // 1. [입력] 
   let name = document.querySelector('#name').value;  
   // 2. [처리]
-  let deleteIndex = nameList.indexOf( name );  
+  let deleteIndex = nameList.indexOf( name ); 
+   
   if(deleteIndex !=-1){ nameList.splice( deleteIndex , 1 );}
   else{alert(`없는 회원입니다.`);}
   // 3. [출력]
