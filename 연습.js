@@ -1,57 +1,85 @@
-const nameList = []
+/*
 
-let 등록 = function(){
-    let input = document.querySelector(`#name`)
+    배열란 ? 여러개 데이터/자료 를 하나의 데이터/자료 만들기
+    객체란 ? 데이터 마다의 속성명/별칭/식별 부여하고 여러개 데이터/자료 를 하나의 데이터/자료 만들기 
 
-    let name = input.value;
 
-    if(nameList.indexOf(name)>=0){alert(`중복된 이름입니다.`)}
-    else if(name.length != 3){alert(`3글자가 아닙니다.`)}
-    else if(!isNaN(name[0])||!isNaN(name[1])||!isNaN(name[2])){alert(`숫자를 포함할수 없습니다.`)}
-    else{
+    할일내용 , 할일상태
+    밥먹기      true
+    집가기      false
+*/
 
-    nameList.push(name);   
+let 할일목록 = [ 
+    { 할일내용 : '밥먹기' , 할일상태 : true } ,
+    { 할일내용 : '집가기' , 할일상태 : false }
+]
 
-    출력()
+// 1. 등록함수
 
-    input.value = ``
+function 등록함수(){ // 등록 버튼 클릭시 
+    console.log( '등록함수()');
+
+    // 1. 입력받은 값 가져온다.
+    let 할일내용 = document.querySelector('#할일내용').value;
+    let 할일상태 = false;
+
+    // 2. 저장 
+        // 1. 두 변수들을 객체화
+    let 할일 = { 할일내용 : 할일내용 , 할일상태 : 할일상태 }
+        // 2. 객체를 배열에 저장 
+    할일목록.push( 할일 );
+
+    // 3. 새로고침 
+    출력함수();
+}
+
+// 2. 출력함수 
+출력함수(); 
+function 출력함수(){ // 실행조건 : 할일목록 배열에 데이터가 변화가 있을떄 [ 등록 , 수정 , 삭제 ] , js 열렸을때 
+    console.log( '출력함수()');
+
+    // 1. 어디에
+    let 어디에 = document.querySelector('#출력구역');
+
+    // 2. 무엇을  // 배열내 객체들 속성값을 하나씩 출력 
+    let 무엇을 = ''
+
+    // 무엇을 += `<div> ${ 할일목록[0].할일내용}  </div>`
+    // 무엇을 += `<div> ${ 할일목록[1].할일내용}  </div>`
+
+    for( let i = 0 ; i<할일목록.length ; i++ ){
+
+        무엇을 += ` <div class= ${ 할일목록[i].할일상태 ? 'red' : 'black'} > 
+                        ${ 할일목록[i].할일내용} 
+                        <button onclick="수정함수( ${ i })"> 수정 </button>
+                        <button onclick="삭제함수( ${ i } )"> 삭제 </button>
+                    </div>`
     }
-}
-
-function 삭제(){
-    let input = document.querySelector(`#name`);
-
-    let name = input.value;
-
-    let deleteIndex = nameList.indexOf(name);
-
-    if( deleteIndex != -1){  nameList.splice( deleteIndex , 1 );}
-    else{ alert('없는 회원 입니다.'); }
-
-    출력()
-
-    input.value = ``
-
+    // 3. 출력 
+    어디에.innerHTML = 무엇을;
 }
 
 
+// 3.
+function 삭제함수( 삭제할인덱스 ){  // 삭제버튼 클릭시 
+    console.log( '삭제함수()' + 삭제할인덱스 );
 
-function 출력(){
-    let nameTable = document.querySelector(`#nameTable`)
+    할일목록.splice( 삭제할인덱스 , 1 );
 
-    let html = `<tr><th>번호</th><th>이름</th></tr> `
+    출력함수();
+} 
 
-    for(let i = 0 ; i < nameList.length ; i++){
-        html += `<tr> 
-                <td> ${ i+1 } </td> 
-                <td> ${ nameList[i] } </td> 
-                </tr>`
-    }console.log( html );
+// 4. 
+function 수정함수( 수정할인덱스 ){
+    console.log( '수정함수()' + 수정할인덱스 );
 
-    nameTable.innerHTML = html;
+    //할일목록[수정할인덱스].할일상태 = !할일목록[수정할인덱스].할일상태
 
+    if( 할일목록[수정할인덱스].할일상태 == true  ){
+        할일목록[수정할인덱스].할일상태 = false 
+    }else{
+        할일목록[수정할인덱스].할일상태 = true;
+    }
 
-
-
-
+    출력함수();
 }
