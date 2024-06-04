@@ -42,18 +42,14 @@
     
     <div id="main">
 
-        <h3>게시물 전체 출력</h3>
+        <h3>게시물 쓰기</h3>
         <a href="write.html">글쓰기</a>
 
-        <table class="table">
-            <thead>
-                <tr><th>번호</th><th>제목</th><th>작성자</th><th>작성일</th><th>조회수</th></tr>
-            </thead>
-            <tbody>
-                <tr><th>1</th><th>안녕</th><th>이이이</th><th>2024-06-04</th><th>3</th></tr>
-                <tr><th>1</th><th>안녕</th><th>이이이</th><th>2024-06-04</th><th>3</th></tr>
-            </tbody>
-        </table>
+        <form>
+          <input id="title" type="text" class="form-control">
+          <textarea id="content" rows="10" class="form-control"></textarea>
+          <button onclick="_write()" type="button">쓰기</button>
+        </form>
 
     </div>
      
